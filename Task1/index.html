@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starbucks Website Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+         <a href="#"><img src="logo.png"  class="logo"></a>
+         <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's not just Coffee <br>It's <span>Starbucks</span></h2>
+                <p>Founded in 1971, Starbucks is a coffee company and coffeehouse chain based in Seattle, Washington. With more than 24,000 locations worldwide, it is one of the largest coffee chains in the world. The company sells coffee, tea, sandwiches, and other food items, as well as coffee mugs and other merchandise. Starbucks is known for its signature coffee drinks, such as the Frappuccino and the Pike Place Roast. The company also offers a variety of non-coffee beverages, such as hot chocolate and iced tea. In addition to its coffeehouses, Starbucks has a grocery store division, a coffee roasting operation, and a line of bottled coffee drinks.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')" ></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+        
+    </section>
+    <section>
+        <div class="column lg_size8of12" typeof="Region" resource="Main">
+            <!-- BEGIN: Main Region Content -->
+        <article class="articleBlock">
+                <h1 class="articleBlock__header">Menu</h1>
+                    <h2 class="articleBlock__summaryHeadline">Delicious, handcrafted beverages and great-tasting food. The secret to making life better.</h2>
+                    <div>
+                    <img src="D:\OIBGRIP\Task1\star.jpg" alt="Espresso drink with whipped cream near a slice of coffee cake" data-aspect="0" class="articleBlock__summaryImage">
+                </div>
+            <div class="articleBlock__text rtf">
+                    <div>
+                        <p>It’s true. The perfect cup of coffee and a wholesome, delicious snack can make your day. So we make sure everything you choose is of the finest quality. Because really, isn’t that how life should be?</p>
+                    </div>
+                    </div>   
+        </article>            <div class="grid">
+                            <div class="column sm_size6of12">
+                                <article class="sectionBlock">
+            <div class="sectionBlock__header">
+                    <h1 class="sectionBlock__headline">
+                        <a href="menu-list/drinks.html" title="Drinks">Drinks</a>
+                    </h1>
+            </div>
+            <div class="sectionBlock__text">
+            </div>
+            <a href="#" class="sectionBlock__link"></a>
+        
+        
+                <div class="sectionBlock__subText rtf"><p>Amazing coffees from around the world. Handcrafted beverages to discover and enjoy. We love bringing you these things.</p></div>
+                    <a class="sectionBlock__link" href="menu-list/drinks.html" title="Starbucks Drinks">Starbucks Drinks</a>
+        </article>
+                            </div>
+                            <div class="column sm_size6of12">
+                                <article class="sectionBlock">
+            <div class="sectionBlock__header">
+                    <h1 class="sectionBlock__headline">
+                        <a href="menu-list/food-list.html" title="Food">Food</a>
+                    </h1>
+            </div>
+            <div class="sectionBlock__text">
+            </div>
+            <a href="#" class="sectionBlock__link"></a>
+        
+        
+                <div class="sectionBlock__subText rtf"><p>Our pastries and sandwiches are made with high-quality, simple ingredients. So all the goodness you taste is real food, simply delicious.</p></div>
+                    <a class="sectionBlock__link" href="menu-list/food-list.html" title="Starbucks Food">Starbucks Food</a>
+        </article>
+                            </div>
+                    </div>
+        
+        
+            <!-- END: Main Region Content -->
+        </div>
+    </section>
+    
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
